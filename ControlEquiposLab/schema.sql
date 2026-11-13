@@ -1,8 +1,4 @@
--- ============================================================================
 -- SCRIPT DE BASE DE DATOS: bd_laboratorio_orm
--- Laboratorio: Control de Equipos de Laboratorio
--- Tecnologías: PostgreSQL, Hibernate ORM, JavaFX
--- ============================================================================
 
 -- 1. Crear base de datos (ejecutar si no existe):
 -- CREATE DATABASE bd_laboratorio_orm;
@@ -10,7 +6,7 @@
 -- 2. Esquema requerido
 CREATE SCHEMA IF NOT EXISTS inventario;
 
--- 3. Eliminar tablas previas si existen (respetando integridad referencial)
+-- 3. Eliminar tablas previas si existen
 DROP TABLE IF EXISTS inventario.equipo CASCADE;
 DROP TABLE IF EXISTS inventario.tipo_equipo CASCADE;
 
